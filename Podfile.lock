@@ -1,0 +1,20 @@
+PODS:
+  - BMSAnalyticsAPI (2.3.1)
+  - BMSCore (2.6.0):
+    - BMSAnalyticsAPI (~> 2.3)
+
+DEPENDENCIES:
+  - BMSCore (~> 2.6.0)
+
+SPEC REPOS:
+  trunk:
+    - BMSAnalyticsAPI
+    - BMSCore
+
+SPEC CHECKSUMS:
+  BMSAnalyticsAPI: f9c740eb3c0857c0955e58a10321a96b5d85304e
+  BMSCore: 969b124f0170d0113a0926e73118057ca7d1eab3
+
+PODFILE CHECKSUM: 3ac124f8df5608ee9b8910d3015b75f6a0b0947b
+
+COCOAPODS: 1.8.4

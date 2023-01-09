@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0F-22-AaF">
+                                <rect key="frame" x="106" y="184" width="202" height="33"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are currently running an iOS app built for the IBM Cloud." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-ID-cox">
+                                <rect key="frame" x="28" y="225" width="358" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Df-2X-0fU" customClass="URLUIBUtton" customModule="iosapp" customModuleProvider="target">
+                                <rect key="frame" x="27" y="366" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn from existing Mobile code patterns"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="url" value="https://developer.ibm.com/technologies/mobile/patterns/"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="visit:" destination="BYZ-38-t0r" eventType="touchDown" id="SNY-oQ-f2l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzy-gw-RbJ" customClass="URLUIBUtton" customModule="iosapp" customModuleProvider="target">
+                                <rect key="frame" x="27" y="442" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ask questions on Slack"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="url" value="https://slack-invite-ibm-cloud-tech.mybluemix.net/"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="visit:" destination="BYZ-38-t0r" eventType="touchDown" id="fbC-EM-4t8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9Q-Dz-UrW" customClass="URLUIBUtton" customModule="iosapp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="404" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Subscribe to our blog"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="url" value="https://developer.ibm.com/technologies/mobile/blogs/"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="visit:" destination="BYZ-38-t0r" eventType="touchDown" id="k4D-le-iyD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-vn-1Jm" customClass="URLUIBUtton" customModule="iosapp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="328" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Read about upcoming mobile events"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="url" value="https://developer.ibm.com/technologies/mobile/events"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="visit:" destination="BYZ-38-t0r" eventType="touchDown" id="FVP-vr-aN7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjK-n9-cXL" customClass="URLUIBUtton" customModule="iosapp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="290" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Visit IBM Cloud App Service"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="url" value="https://cloud.ibm.com/developer/appservice/dashboard?env_id=ibm%3Ayp%3Aus-south"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="visit:" destination="BYZ-38-t0r" eventType="touchDown" id="J0H-pr-7Je"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IBM Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="foC-rb-0ql">
+                                <rect key="frame" x="20" y="52" width="374" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="dd7-NR-dbb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-bp-3yc" customClass="URLUIBUtton" customModule="iosapp" customModuleProvider="target">
+                                <rect key="frame" x="104" y="480" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Visit Mobile Developer Center"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="url" value="https://developer.ibm.com/technologies/mobile"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="visit:" destination="BYZ-38-t0r" eventType="touchDown" id="qwY-LF-qkl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="foC-rb-0ql" secondAttribute="trailing" constant="20" id="Mrf-MA-fhc"/>
+                            <constraint firstItem="foC-rb-0ql" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="V5b-Z5-4S3"/>
+                            <constraint firstItem="foC-rb-0ql" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="y2r-I6-EQD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="113.16964285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IBM Cloud" width="543" height="159"/>
+    </resources>
+</document>
